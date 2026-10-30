@@ -1,0 +1,19 @@
+pub const COURT_WIDTH: f32 = 960.0;
+pub const COURT_HEIGHT: f32 = 540.0;
+pub const PADDLE_WIDTH: f32 = 16.0;
+pub const PADDLE_HEIGHT: f32 = 96.0;
+pub const PADDLE_X: f32 = 430.0;
+pub const BALL_RADIUS: f32 = 8.0;
+pub const PLAYER_SPEED: f32 = 520.0;
+pub const COMPUTER_SPEED: f32 = 340.0;
+pub const SERVE_SPEED: f32 = 380.0;
+pub const MAX_BALL_SPEED: f32 = 900.0;
+pub const MIN_BOUNCE_ANGLE_DEGREES: f32 = 12.0;
+pub const MAX_BOUNCE_ANGLE_DEGREES: f32 = 60.0;
+pub const WINNING_SCORE: u8 = 7;
+pub const TICK_HZ: f64 = 120.0;
+pub const TICK_SECONDS: f32 = 1.0 / TICK_HZ as f32;
+pub const SERVE_TICKS: u16 = 90;
+
+pub(crate) const PADDLE_LIMIT: f32 = (COURT_HEIGHT - PADDLE_HEIGHT) / 2.0;
+pub(crate) const GOAL_X: f32 = COURT_WIDTH / 2.0 + BALL_RADIUS;

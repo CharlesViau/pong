@@ -1,3 +1,8 @@
+mod desktop_app;
+mod game;
+
+use desktop_app::DesktopApp;
+
 fn main() {
-    println!("Hello, world!");
+    DesktopApp::build().run();
 }

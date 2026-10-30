@@ -3,5 +3,10 @@ name = "pong"
 version = "0.1.0"
 edition = "2024"
 
+[workspace]
+members = ["crates/pong_core"]
+
 [dependencies]
+avian2d = { version = "0.8.0", default-features = false, features = ["2d", "parry-f32"] }
 bevy = "0.20.0"
+pong_core = { path = "crates/pong_core" }
